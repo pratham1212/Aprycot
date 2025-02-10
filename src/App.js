@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SideBar from './Components/SideBar';
 import Header from "./Components/Header";
 import HomePage from "./Pages/HomePage";
+import Footer from "./Components/Footer";
 
 function App() {
   const [isExpanded, setIsExpanded] = useState(false); // State for sidebar
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
